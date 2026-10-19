@@ -4,7 +4,6 @@ fun main() {
     val csv = "nombre,nota1,nota2,nota3\nAna,7,8,9\nLuis,5,6,4\nMarta,9,10,8"
     val lineas = csv.split("\n")
 
-    // Empezamos en 1 para saltarnos los encabezados.
     for (i in 1 until lineas.size) {
         val datos = lineas[i].split(",")
         val nombre = datos[0]
