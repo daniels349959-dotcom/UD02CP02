@@ -6,7 +6,6 @@ fun main() {
     val frecuencias = mutableMapOf<Char, Int>()
 
     for (letra in texto) {
-        // Solo contamos letras: no contamos espacios, números ni signos.
         if (letra.isLetter()) {
             val cantidad = frecuencias[letra] ?: 0
             frecuencias[letra] = cantidad + 1
