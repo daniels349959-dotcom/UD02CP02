@@ -14,7 +14,6 @@ fun añadir(tarea: String) {
 }
 
 fun completar(indice: Int) {
-    // El usuario ve números desde 1, pero la lista empieza en 0.
     val posicion = indice - 1
     if (posicion < 0 || posicion >= tareas.size) {
         println("Ese número de tarea no existe.")
