@@ -31,9 +31,7 @@ fun main() {
                 2, 3 -> {
                     println("Escribe el asiento (por ejemplo, A1):")
                     val asiento = readln().trim().uppercase()
-                    // as? convierte de forma segura; ?: usa false si no hay un Boolean.
                     val ocupado = (asientos[asiento] as? Boolean) ?: false
-                    // Una clave inexistente devuelve null: se comprueba antes de modificar.
                     if (asientos[asiento] == null) {
                         println("El asiento no existe.")
                     } else if (opcion == 2) {
